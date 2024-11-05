@@ -72,7 +72,7 @@ fonts info - playfair regular text..., fraunces headings..., helvetica quotes...
 *,
 *::before,
 *::after {
-  border: 1px solid red !important;
+  /* border: 1px solid red !important; */
 }
 
 body {
