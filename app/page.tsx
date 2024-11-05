@@ -10,7 +10,7 @@ export default function Home() {
         <div style={{ position: "relative", zIndex: 1, display: "grid", justifyItems: "center", alignContent: "flex-start", backgroundColor: "rgba(var(--shade5), .5)", padding: "var(--paddingM) var(--paddingR)" }}>
           <p className="extraLargeText" style={{ color: "rgb(var(--color1))" }}>Angel Rose Adult Care</p>
 
-          <h2 style={{ color: "rgb(var(--color4))" }}>Caring is not just what we do.  Its who we <span style={{ color: "rgb(var(--color2))" }}>ARE</span>.</h2>
+          <h2 style={{ color: "rgb(var(--color4))" }}>Caring is not just what we do.  Its who we <span style={{ color: "rgb(var(--color2))" }}>ARE.</span></h2>
         </div>
       </div>
 
