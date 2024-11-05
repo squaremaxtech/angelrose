@@ -6,10 +6,10 @@ import Link from 'next/link'
 import Logo from '@/components/logo/Logo'
 import { usePathname } from "next/navigation"
 
-export function ShowOnDesktop({ menuItems, showingAllItems = true }: { menuItems: menuItem[], showingAllItems?: boolean }) {
+export function ShowOnDesktop({ menuItems, calledFromFooter = false }: { menuItems: menuItem[], calledFromFooter?: boolean }) {
     return (
-        <nav className={`${styles.nav} ${styles.desktop}`}>
-            {showingAllItems && <Logo />}
+        <nav className={`${styles.nav} ${styles.desktop} ${calledFromFooter ? styles.calledFromFooter : ""}`}>
+            {!calledFromFooter && <Logo />}
 
             <DisplayMenu menuItems={menuItems} />
         </nav>

@@ -50,6 +50,10 @@
        border-bottom: 1px solid rgb(var(--shade3));
    }
 
+   .calledFromFooter .menuItem {
+       padding: var(--paddingS) var(--paddingM);
+   }
+
    .menuItem:hover,
    .highlighted {
        background-color: rgb(var(--shade3));

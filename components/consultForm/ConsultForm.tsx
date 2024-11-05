@@ -32,23 +32,28 @@ export default function ConsultForm() {
         "firstName": {
             label: "First Name",
             placeHolder: "Enter your first name",
+            required: true
         },
         "lastName": {
             label: "Last Name",
             placeHolder: "Enter your last name",
+            required: true
         },
         "email": {
             label: "Email",
             placeHolder: "Enter your email address",
+            required: true
         },
         "phone": {
             label: "Phone Number",
             placeHolder: "Enter your phone number",
+            required: true
         },
         "message": {
             label: "Message",
             placeHolder: "Enter your message here",
-            inputType: "textarea"
+            inputType: "textarea",
+            required: true
         },
     });
 
@@ -142,6 +147,7 @@ export default function ConsultForm() {
                         type={moreFormInfo[eachKey].type}
                         label={moreFormInfo[eachKey].label}
                         placeHolder={moreFormInfo[eachKey].placeHolder}
+                        required={moreFormInfo[eachKey].required}
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                             formObjSet(prevFormObj => {
                                 const newFormObj = { ...prevFormObj }
@@ -158,6 +164,7 @@ export default function ConsultForm() {
                         value={`${formObj[eachKey]}`}
                         label={moreFormInfo[eachKey].label}
                         placeHolder={moreFormInfo[eachKey].placeHolder}
+                        required={moreFormInfo[eachKey].required}
                         onInput={(e) => {
                             formObjSet(prevFormObj => {
                                 const newFormObj = { ...prevFormObj }
@@ -190,7 +197,7 @@ export default function ConsultForm() {
                 )
             })}
 
-            <button className='mainButton'
+            <button className='mainButton' style={{ justifySelf: "flex-start" }}
                 onClick={handleSubmit}
             >Submit</button>
         </form>

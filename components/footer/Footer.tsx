@@ -15,7 +15,7 @@ export default function Footer() {
                 <ConsultForm />
             </div>
 
-            <ShowOnDesktop menuItems={menuItems} showingAllItems={false} />
+            <ShowOnDesktop menuItems={menuItems} calledFromFooter={true} />
         </footer>
     )
 }
