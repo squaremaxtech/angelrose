@@ -17,7 +17,7 @@ const playfairItalicFont = localFont({
 const frauncesFont = localFont({
   src: "./fonts/fraunces.ttf",
   variable: "--fraunces",
-  weight: "100 300 900",
+  // weight: "100 400 900",
 });
 
 export const metadata: Metadata = {

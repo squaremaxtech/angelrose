@@ -8,10 +8,11 @@ fonts info - playfair regular text..., fraunces headings..., helvetica quotes...
 
 :root {
   /* display rgb values */
-  --display-color1: #fffbf0;
+  --display-color1: #fefaf0;
   --display-color2: #4ab6f5;
   --display-color3: #c1e37d;
   --display-color4: #fffdc3;
+
   /* shades */
   --display-shade1: #000000;
   --display-shade2: #ffffff;
@@ -20,7 +21,7 @@ fonts info - playfair regular text..., fraunces headings..., helvetica quotes...
   --display-shade5: #403f2b;
 
   /* colors */
-  --color1: 255, 251, 240;
+  --color1: 254, 250, 240;
   --color2: 74, 182, 245;
   --color3: 193, 227, 125;
   --color4: 255, 253, 195;
@@ -36,20 +37,26 @@ fonts info - playfair regular text..., fraunces headings..., helvetica quotes...
   /* property name / size es-s-r-m-l-el*/
   --gapS: .5rem;
   --gapR: 1rem;
+  --gapM: 2rem;
 
   --paddingS: .5rem;
   --paddingR: 1rem;
   --paddingM: 2rem;
+  --paddingML: 4rem;
   --paddingL: 7rem;
 
-  --radiusR: 1rem;
+  --marginR: 1rem
+    /* border radius */
+    --borderRadiusR: 1rem;
+  --borderRadiusM: 2rem;
 
   /* fonts */
   --fontSizeS: 16px;
   --fontSizeR: 20px;
-  --fontSizeM: 35px;
-  --fontSizeL: 65px;
-  --fontSizeEL: 100px;
+  --fontSizeRM: min(30px, 6vw);
+  --fontSizeM: min(35px, 6vw);
+  --fontSizeL: min(65px, 10vw);
+  --fontSizeEL: min(100px, 10vw);
 
   /* sizes */
   --sizeS: .7rem;
@@ -58,17 +65,19 @@ fonts info - playfair regular text..., fraunces headings..., helvetica quotes...
   --sizeL: 2rem;
 
   /* transition times */
-  --transitionR: 400ms;
+  --transitionTimeR: 400ms;
+  --transitionTimeM: 1000ms;
 }
 
 *,
 *::before,
 *::after {
-  /* border: 1px solid red !important; */
+  border: 1px solid red !important;
 }
 
 body {
-  color: rgb(var(--shade1));
+  color: rgb(var(--shade5));
+  font-size: var(--fontSizeR);
   background: rgb(var(--shade2));
   min-height: 100vh;
   width: 100%;
@@ -89,12 +98,28 @@ body::-webkit-scrollbar-track {
   background-color: rgb(var(--shade2));
 }
 
-h1 {}
+h1 {
+  font-size: var(--fontSizeL);
+  font-family: var(--fraunces);
+  font-weight: 400;
+  color: rgb(var(--shade5))
+}
 
 h2 {
-  font-size: var(--fontSizeM);
+  font-size: var(--fontSizeRM);
   font-family: var(--fraunces);
+  font-weight: 350;
   color: rgb(var(--shade5))
+}
+
+p {
+  /* max-width: 45ch; */
+}
+
+section {
+  display: grid;
+  align-content: flex-start;
+  padding: var(--paddingML) var(--paddingML);
 }
 
 svg {
@@ -104,7 +129,26 @@ svg {
 
 
 /* classNames */
+.mainButton {
+  text-transform: capitalize;
+  color: rgb(var(--color1));
+  background-color: rgb(var(--shade5));
+  border-radius: var(--borderRadiusM);
+  padding: var(--paddingS) var(--paddingR);
+}
+
 .extraLargeText {
   font-size: var(--fontSizeEL);
   font-family: var(--fraunces);
+  line-height: 10vw;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding: var(--paddingM) var(--paddingR);
+  }
+
+  .collapsePadding {
+    padding: 0;
+  }
 }

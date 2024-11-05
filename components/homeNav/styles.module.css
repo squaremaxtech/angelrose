@@ -1,0 +1,22 @@
+.cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    width: min(1150px, 100%);
+    margin: 0 auto;
+    row-gap: var(--gapM);
+}
+
+.contItem {
+    display: grid;
+    justify-items: center;
+    text-transform: capitalize;
+    gap: var(--gapR);
+}
+
+.contItem img {
+    transition: scale var(--transitionTimeM);
+}
+
+.contItem:hover img {
+    scale: 1.1;
+}

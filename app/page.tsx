@@ -1,19 +1,19 @@
-import Image from "next/image";
-import ladiesHug from "@/public/ladiesHug.webp"
+import HomeNav from "@/components/homeNav/HomeNav";
+import HomeStarter from "@/components/homeStarter/HomeStarter";
+import OurMission from "@/components/ourMission/OurMission";
 
 export default function Home() {
   return (
     <main style={{ minHeight: "5000vh", zIndex: 0 }}>
-      <div style={{ position: "relative", height: "120dvh", display: "grid", alignItems: "flex-end" }}>
-        <Image alt={"home image ladies hugging"} src={ladiesHug} fill={true} style={{ objectFit: "cover" }} />
+      <HomeStarter />
 
-        <div style={{ position: "relative", zIndex: 1, display: "grid", justifyItems: "center", alignContent: "flex-start", backgroundColor: "rgba(var(--shade5), .5)", padding: "var(--paddingM) var(--paddingR)" }}>
-          <p className="extraLargeText" style={{ color: "rgb(var(--color1))" }}>Angel Rose Adult Care</p>
+      <section>
+        <HomeNav />
+      </section>
 
-          <h2 style={{ color: "rgb(var(--color4))" }}>Caring is not just what we do.  Its who we <span style={{ color: "rgb(var(--color2))" }}>ARE.</span></h2>
-        </div>
-      </div>
-
+      <section className="collapsePadding" style={{ backgroundColor: "rgb(var(--color3))" }}>
+        <OurMission />
+      </section>
     </main>
   );
 }

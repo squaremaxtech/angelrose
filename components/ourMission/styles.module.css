@@ -1,0 +1,44 @@
+.textCont {
+    flex: 3 1 500px;
+    background-color: rgb(var(--color1));
+    padding: var(--paddingML) var(--paddingL);
+    display: grid;
+    align-content: flex-start;
+    gap: var(--gapR);
+}
+
+.textSmallCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.textSmallCont>a {
+    margin-left: auto;
+}
+
+.quotesText {
+    font-size: var(--fontSizeRM);
+    font-family: helvetica;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    .textCont {
+        padding: var(--paddingM) var(--paddingR);
+        text-align: center;
+    }
+
+    .quotesText {
+        text-align: center
+    }
+
+    .textSmallCont {
+        flex-direction: column-reverse;
+        gap: var(--gapR);
+    }
+
+    .textSmallCont>a {
+        margin-inline: auto;
+    }
+}

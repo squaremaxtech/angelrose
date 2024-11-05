@@ -45,9 +45,8 @@
        display: grid;
        align-items: center;
        position: relative;
-       padding-inline: var(--paddingR);
        background-color: rgb(var(--shade2));
-       transition: background-color var(--transitionR), color var(--transitionR);
+       transition: background-color var(--transitionTimeR), color var(--transitionTimeR);
        border-bottom: 1px solid rgb(var(--shade3));
    }
 
@@ -59,7 +58,7 @@
 
    .menuItem:hover>.subMenu {
        display: grid;
-       animation: fadeUpAnIn var(--transitionR);
+       animation: fadeUpAnIn var(--transitionTimeR);
    }
 
    .chevronCont {
@@ -83,7 +82,7 @@
    }
 
    .chevron {
-       transition: rotate var(--transitionR), fill var(--transitionR);
+       transition: rotate var(--transitionTimeR), fill var(--transitionTimeR);
        width: var(--sizeS);
    }
 
@@ -99,7 +98,7 @@
 
    .subMenuItem {
        padding-inline: var(--paddingR);
-       transition: background-color var(--transitionR), color var(--transitionR);
+       transition: background-color var(--transitionTimeR), color var(--transitionTimeR);
    }
 
    .subMenuItem:hover {
@@ -173,7 +172,7 @@
 
        .menuItem:hover>.subMenu {
            display: grid;
-           animation: fadeUpAnIn var(--transitionR);
+           animation: fadeUpAnIn var(--transitionTimeR);
        }
 
        .chevron {
