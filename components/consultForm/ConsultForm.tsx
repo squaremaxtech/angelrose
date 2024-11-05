@@ -111,7 +111,7 @@ export default function ConsultForm() {
             await sendNodeEmail({
                 sendTo: "squaremaxtech@gmail.com",
                 replyTo: formObj.email,
-                subject: `Customer Consult from ${formObj.firstName} ${formObj.lastName}`,
+                subject: `Customer Consult from ${formObj.firstName} ${formObj.lastName} - angelrose`,
                 text: `
                 ${Object.entries(formObj).map(eachObjEntry => {
                     const eachObjKey = eachObjEntry[0]
