@@ -1,0 +1,12 @@
+.form {
+    display: grid;
+    color: rgb(var(--shade1));
+    background-color: rgb(var(--shade2));
+    padding: var(--paddingR);
+    gap: var(--gapS);
+    font-size: var(--fontSizeS);
+}
+
+.form>div {
+    display: grid;
+}

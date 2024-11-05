@@ -1,0 +1,22 @@
+.cont {
+    display: grid;
+    justify-self: stretch;
+    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+    gap: var(--gapM);
+    margin-top: var(--marginM);
+}
+
+.textCont {
+    flex: 3 1 250px;
+    display: grid;
+    gap: var(--gapS);
+    gap: "var(--gap5)";
+    padding: var(--paddingR);
+    background-color: rgba(var(--shade4), 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+    .textCont>a {
+        justify-self: center;
+    }
+}

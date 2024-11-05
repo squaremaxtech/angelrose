@@ -2,16 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-fonts info - playfair regular text..., fraunces headings..., helvetica quotes..., arial regular p / buttons
- */
-
 :root {
   /* display rgb values */
   --display-color1: #fefaf0;
   --display-color2: #4ab6f5;
   --display-color3: #c1e37d;
   --display-color4: #fffdc3;
+  --display-color5: #28908b;
 
   /* shades */
   --display-shade1: #000000;
@@ -25,12 +22,13 @@ fonts info - playfair regular text..., fraunces headings..., helvetica quotes...
   --color2: 74, 182, 245;
   --color3: 193, 227, 125;
   --color4: 255, 253, 195;
+  --color5: 40, 144, 139;
 
   /* shades */
   --shade1: 0, 0, 0;
   --shade2: 255, 255, 255;
   --shade3: 40, 38, 38;
-  --shade4: rgba(226, 228, 230, 0.8);
+  --shade4: 226, 228, 230;
   --shade5: 64, 63, 43;
 
 
@@ -45,16 +43,19 @@ fonts info - playfair regular text..., fraunces headings..., helvetica quotes...
   --paddingML: 4rem;
   --paddingL: 7rem;
 
-  --marginR: 1rem
-    /* border radius */
-    --borderRadiusR: 1rem;
+  --marginS: .5rem;
+  --marginR: 1rem;
+  --marginM: 2rem;
+
+  /* border radius */
+  --borderRadiusR: 1rem;
   --borderRadiusM: 2rem;
 
   /* fonts */
   --fontSizeS: 16px;
   --fontSizeR: 20px;
   --fontSizeRM: min(30px, 6vw);
-  --fontSizeM: min(35px, 6vw);
+  --fontSizeM: min(35px, 8vw);
   --fontSizeL: min(65px, 10vw);
   --fontSizeEL: min(100px, 10vw);
 
@@ -63,6 +64,7 @@ fonts info - playfair regular text..., fraunces headings..., helvetica quotes...
   --sizeR: 1rem;
   --sizeM: 1.5rem;
   --sizeL: 2rem;
+  --sizeEL: 3rem;
 
   /* transition times */
   --transitionTimeR: 400ms;
@@ -73,6 +75,11 @@ fonts info - playfair regular text..., fraunces headings..., helvetica quotes...
 *::before,
 *::after {
   /* border: 1px solid red !important; */
+}
+
+*::selection {
+  background-color: rgb(var(--color2));
+  color: rgb(var(--shade2));
 }
 
 body {
@@ -102,7 +109,7 @@ h1 {
   font-size: var(--fontSizeL);
   font-family: var(--fraunces);
   font-weight: 400;
-  color: rgb(var(--shade5))
+  color: rgb(var(--shade5));
 }
 
 h2 {
@@ -112,14 +119,29 @@ h2 {
   color: rgb(var(--shade5))
 }
 
+h3 {
+  font-size: var(--fontSizeR);
+  font-family: var(--fraunces);
+  color: rgb(var(--shade2))
+}
+
 p {
-  /* max-width: 45ch; */
+  max-width: 80ch;
 }
 
 section {
   display: grid;
   align-content: flex-start;
   padding: var(--paddingML) var(--paddingML);
+}
+
+footer {
+  padding: var(--paddingML) var(--paddingML);
+}
+
+input,
+textarea {
+  padding: var(--paddingS);
 }
 
 svg {
@@ -135,6 +157,13 @@ svg {
   background-color: rgb(var(--shade5));
   border-radius: var(--borderRadiusM);
   padding: var(--paddingS) var(--paddingR);
+  border: 1px solid rgb(var(--shade5));
+  transition: color var(--transitionTimeR), background-color var(--transitionTimeR);
+}
+
+.mainButton:hover {
+  color: rgb(var(--shade5));
+  background-color: var(--changeColor, rgb(var(--color1)));
 }
 
 .extraLargeText {
@@ -145,10 +174,15 @@ svg {
 
 @media only screen and (max-width: 600px) {
   section {
-    padding: var(--paddingM) var(--paddingR);
+    padding: var(--paddingM) var(--paddingM);
   }
 
+  footer {
+    padding: var(--paddingM) var(--paddingM);
+  }
+
+
   .collapsePadding {
-    padding: 0;
+    padding: 0 !important;
   }
 }

@@ -9,6 +9,7 @@
 
 .textSmallCont {
     display: flex;
+    gap: var(--gapR);
     flex-direction: column;
 }
 
@@ -35,7 +36,6 @@
 
     .textSmallCont {
         flex-direction: column-reverse;
-        gap: var(--gapR);
     }
 
     .textSmallCont>a {

@@ -22,7 +22,7 @@
        font-family: var(--fraunces);
        font-size: var(--fontSizeM);
        color: rgb(var(--shade3));
-       font-weight: 300;
+       font-weight: 350;
 
        display: none;
        padding: var(--paddingR);
