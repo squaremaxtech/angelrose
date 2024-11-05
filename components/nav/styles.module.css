@@ -1,0 +1,187 @@
+   .nav {
+       position: relative;
+       display: flex;
+       align-items: center;
+       text-transform: capitalize;
+       white-space: nowrap;
+       z-index: 999;
+   }
+
+   /* desktop */
+   .desktop {
+       font-family: var(--playfairItalic);
+       font-size: var(--fontSizeR);
+       color: rgb(var(--shade3));
+       font-weight: 500;
+
+       justify-content: space-between;
+       padding: var(--paddingR) var(--paddingL);
+   }
+
+   .mobile {
+       font-family: var(--fraunces);
+       font-size: var(--fontSizeM);
+       color: rgb(var(--shade3));
+       font-weight: 300;
+
+       display: none;
+       padding: var(--paddingR);
+       align-items: center;
+       justify-items: center;
+   }
+
+   .barButton>svg {
+       width: var(--sizeL);
+       height: var(--sizeL);
+   }
+
+   .menu {
+       display: grid;
+       align-content: flex-start;
+       border-top: 1px solid rgb(var(--shade3));
+   }
+
+   .menuItem {
+       display: grid;
+       align-items: center;
+       position: relative;
+       padding-inline: var(--paddingR);
+       background-color: rgb(var(--shade2));
+       transition: background-color var(--transitionR), color var(--transitionR);
+       border-bottom: 1px solid rgb(var(--shade3));
+   }
+
+   .menuItem:hover,
+   .highlighted {
+       background-color: rgb(var(--shade3));
+       color: rgb(var(--shade2));
+   }
+
+   .menuItem:hover>.subMenu {
+       display: grid;
+       animation: fadeUpAnIn var(--transitionR);
+   }
+
+   .chevronCont {
+       display: flex;
+       justify-content: center;
+   }
+
+   .chevronCont>a {
+       position: relative;
+   }
+
+   .menuItem:hover .chevron {
+       rotate: 180deg;
+       fill: rgb(var(--shade2))
+   }
+
+   .chevronCont {
+       display: flex;
+       gap: var(--gapS);
+       align-items: center;
+   }
+
+   .chevron {
+       transition: rotate var(--transitionR), fill var(--transitionR);
+       width: var(--sizeS);
+   }
+
+   .subMenu {
+       display: none;
+       position: absolute;
+       left: 0;
+       top: 0;
+       translate: -100% 0;
+       background-color: rgb(var(--shade3));
+       color: rgb(var(--shade2));
+   }
+
+   .subMenuItem {
+       padding-inline: var(--paddingR);
+       transition: background-color var(--transitionR), color var(--transitionR);
+   }
+
+   .subMenuItem:hover {
+       background-color: rgb(var(--shade3));
+       color: rgb(var(--shade2));
+   }
+
+
+   @keyframes fadeUpAnIn {
+       from {
+           opacity: 0;
+           transform: translateY(20%);
+       }
+
+       to {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+
+
+   /* mobile */
+   @media only screen and (max-width: 1000px) {
+       .desktop {
+           display: none;
+       }
+
+       .mobile {
+           display: grid;
+       }
+
+       .barButton {
+           justify-self: flex-end;
+           z-index: 1;
+       }
+
+       .menu {
+           position: fixed;
+           padding: var(--paddingL) var(--paddingR);
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgb(var(--color1));
+           overflow-y: auto;
+           border: none;
+           justify-content: stretch;
+       }
+
+       .menuItem {
+           padding: var(--paddingR);
+           background-color: transparent;
+           border: none;
+       }
+
+       .menuItem:hover,
+       .highlighted {
+           background-color: inherit;
+           color: inherit;
+       }
+
+       .chevronCont {
+           justify-content: flex-start;
+       }
+
+       .subMenu {
+           position: relative;
+           translate: 0 0;
+           background-color: transparent;
+       }
+
+       .menuItem:hover>.subMenu {
+           display: grid;
+           animation: fadeUpAnIn var(--transitionR);
+       }
+
+       .chevron {
+           width: var(--sizeR);
+           height: var(--sizeR);
+       }
+
+       .menuItem:hover .chevron {
+           fill: rgb(var(--shade3));
+       }
+   }

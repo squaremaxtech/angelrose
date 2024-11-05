@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+fonts info - playfair regular text..., fraunces headings..., helvetica quotes..., arial regular p / buttons
+ */
+
+:root {
+  /* display rgb values */
+  --display-color1: #fffbf0;
+  --display-color2: #4ab6f5;
+  --display-color3: #c1e37d;
+  --display-color4: #fffdc3;
+  /* shades */
+  --display-shade1: #000000;
+  --display-shade2: #ffffff;
+  --display-shade3: #282626;
+  --display-shade4: #e2e4e6cc;
+  --display-shade5: #403f2b;
+
+  /* colors */
+  --color1: 255, 251, 240;
+  --color2: 74, 182, 245;
+  --color3: 193, 227, 125;
+  --color4: 255, 253, 195;
+
+  /* shades */
+  --shade1: 0, 0, 0;
+  --shade2: 255, 255, 255;
+  --shade3: 40, 38, 38;
+  --shade4: rgba(226, 228, 230, 0.8);
+  --shade5: 64, 63, 43;
+
+
+  /* property name / size es-s-r-m-l-el*/
+  --gapS: .5rem;
+  --gapR: 1rem;
+
+  --paddingS: .5rem;
+  --paddingR: 1rem;
+  --paddingM: 2rem;
+  --paddingL: 7rem;
+
+  --radiusR: 1rem;
+
+  /* fonts */
+  --fontSizeS: 16px;
+  --fontSizeR: 20px;
+  --fontSizeM: 35px;
+  --fontSizeL: 65px;
+  --fontSizeEL: 100px;
+
+  /* sizes */
+  --sizeS: .7rem;
+  --sizeR: 1rem;
+  --sizeM: 1.5rem;
+  --sizeL: 2rem;
+
+  /* transition times */
+  --transitionR: 400ms;
+}
+
+*,
+*::before,
+*::after {
+  /* border: 1px solid red !important; */
+}
+
+body {
+  color: rgb(var(--shade1));
+  background: rgb(var(--shade2));
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  font-family: arial;
+}
+
+body::-webkit-scrollbar {
+  width: .25rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--shade3));
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(var(--shade2));
+}
+
+h1 {}
+
+h2 {
+  font-size: var(--fontSizeM);
+  font-family: var(--fraunces);
+  color: rgb(var(--shade5))
+}
+
+svg {
+  width: var(--sizeR);
+  height: var(--sizeR);
+}
+
+
+/* classNames */
+.extraLargeText {
+  font-size: var(--fontSizeEL);
+  font-family: var(--fraunces);
+}
