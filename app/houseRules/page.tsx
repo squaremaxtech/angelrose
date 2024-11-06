@@ -7,11 +7,11 @@ import baby from "@/public/baby.webp"
 export default function Page() {
     return (
         <main className={styles.main}>
-            <div style={{ position: "relative", minHeight: "500px" }}>
-                <Image alt='landing image' priority={true} src={img} fill={true} sizes='100vw' style={{ objectFit: "cover", }} />
+            <div className={styles.imageCont} style={{ position: "relative" }}>
+                <Image alt='landing image' priority={true} src={img} fill={true} sizes='100vw' style={{ objectFit: "cover" }} />
             </div>
 
-            <section style={{ backgroundColor: "rgba(var(--shade4), .8)", paddingBottom: "var(--paddingEL)", position: "relative" }}>
+            <section style={{ backgroundColor: "rgba(var(--shade4), .8)", paddingBottom: "var(--paddingEL)", position: "relative", overflowX: "clip" }}>
                 <div style={{ width: "min(1000px, 100%)", margin: "0 auto", display: "grid", alignContent: "flex-start", gap: "var(--gapM)" }}>
                     <h2>Administrative Rules</h2>
 

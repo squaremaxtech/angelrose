@@ -3,6 +3,10 @@
     align-content: flex-start;
 }
 
+.imageCont {
+    min-height: 500px;
+}
+
 .notesCont {
     display: grid;
     align-content: flex-start;
@@ -56,4 +60,11 @@
     display: grid;
     align-content: flex-start;
     gap: var(--gapM);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .imageCont {
+        min-height: 150px;
+    }
 }
