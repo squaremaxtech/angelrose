@@ -16,6 +16,8 @@
   --display-color3: #c1e37d;
   --display-color4: #fffdc3;
   --display-color5: #28908b;
+  --display-color6: #28908b;
+  --display-color7: #b04040;
 
   /* shades */
   --display-shade1: #000000;
@@ -23,7 +25,6 @@
   --display-shade3: #282626;
   /* always put rgba and .8 opacity when using shade 4 */
   --display-shade4: #e2e4e6cc;
-  --display-shade5: #403f2b;
 
   /* colors */
   --color1: 254, 250, 240;
@@ -31,6 +32,7 @@
   --color3: 193, 227, 125;
   --color4: 255, 253, 195;
   --color5: 40, 144, 139;
+  --color7: 176, 64, 64;
 
   /* shades */
   --shade1: 0, 0, 0;

@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
-import img from "@/public/village.jpg"
+import img from "@/public/ladycomputer.webp"
 import baby from "@/public/baby.webp"
 
 export default function Page() {
     return (
         <main className={styles.main}>
             <div style={{ position: "relative", minHeight: "500px" }}>
-                <Image alt='landing image' src={img} fill={true} style={{ objectFit: "cover", }} />
+                <Image alt='landing image' priority={true} src={img} fill={true} sizes='100vw' style={{ objectFit: "cover", }} />
             </div>
 
             <section style={{ backgroundColor: "rgba(var(--shade4), .8)", paddingBottom: "var(--paddingEL)", position: "relative" }}>

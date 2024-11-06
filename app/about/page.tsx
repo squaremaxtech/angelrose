@@ -32,7 +32,7 @@ export default function Page() {
                     </div>
 
                     <div style={{ flex: "1 1 400px", position: "relative", minHeight: "400px" }}>
-                        <Image alt='' src={ladySmiling} fill={true} style={{ objectFit: "cover" }} />
+                        <Image alt='lady smiling img' src={ladySmiling} priority={true} fill={true} style={{ objectFit: "cover" }} />
                     </div>
                 </div>
             </section>
