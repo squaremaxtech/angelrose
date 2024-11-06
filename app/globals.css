@@ -44,6 +44,7 @@
   --gapS: .5rem;
   --gapR: 1rem;
   --gapM: 2rem;
+  --gapML: 3rem;
   --gapL: 4rem;
 
   --paddingS: .5rem;
@@ -52,6 +53,7 @@
   --paddingML: 4rem;
   --paddingMML: 5rem;
   --paddingL: 7rem;
+  --paddingEL: 15rem;
 
   --marginS: .5rem;
   --marginR: 1rem;

@@ -153,7 +153,7 @@ export default function Page() {
 function TwoColumnLayout({ textCont, image, flip }: { textCont: JSX.Element, image: StaticImageData, flip?: boolean }) {
   return (
     <div style={{ display: "flex", flexWrap: "wrap", flexDirection: flip ? "row-reverse" : "row" }}>
-      <div style={{ flex: "1 1 300px", position: "relative", minHeight: "200px" }}>
+      <div style={{ flex: "1 1 300px", position: "relative", minHeight: "300px" }}>
         <Image alt="lady in chair" src={image} fill={true} style={{ objectFit: "cover" }} />
       </div>
 

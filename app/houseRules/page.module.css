@@ -1,0 +1,59 @@
+.main {
+    display: grid;
+    align-content: flex-start;
+}
+
+.notesCont {
+    display: grid;
+    align-content: flex-start;
+    gap: var(--gapML);
+}
+
+.main span {
+    font-weight: bold;
+}
+
+.notesCont ul {
+    display: grid;
+    align-content: flex-start;
+    padding-left: var(--paddingR);
+}
+
+.notesCont ul>li {
+    display: flex;
+    gap: var(--gapS);
+}
+
+.notesCont ul>li::before {
+    content: "•";
+
+}
+
+.stackedLayoutsCont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gapR);
+}
+
+.stackedLayout {
+    flex: 1 1 300px;
+    display: grid;
+    align-content: flex-start;
+    gap: var(--gapR);
+}
+
+.topSlide {
+    background-color: rgb(var(--color1));
+    padding: var(--paddingM);
+    display: grid;
+    align-content: flex-start;
+    gap: var(--gapM);
+}
+
+.bottomSlide {
+    background-color: rgb(var(--color3));
+    padding: var(--paddingM);
+    display: grid;
+    align-content: flex-start;
+    gap: var(--gapM);
+}
