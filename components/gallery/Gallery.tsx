@@ -2,11 +2,11 @@
 import Image from 'next/image'
 import React, { useState, useEffect, useRef } from 'react'
 import styles from "./gallery.module.css"
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import { StaticImageData } from 'next/dist/shared/lib/get-img-props'
 import img from "@/public/village.jpg"
 import img2 from "@/public/smilingLady.webp"
 
-type galleryItems = { name: string; image: StaticImport; }
+type galleryItems = { name: string; image: StaticImageData; }
 const gallery: galleryItems[] = [
     {
         name: "Family Portrait",

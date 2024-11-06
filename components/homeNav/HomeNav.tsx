@@ -1,4 +1,4 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import { StaticImageData } from 'next/dist/shared/lib/get-img-props'
 import React from 'react'
 
 import img1 from "@/public/womanAndOldLady.webp"
@@ -11,7 +11,7 @@ import Link from 'next/link'
 import styles from "./styles.module.css"
 
 type item = {
-    img: StaticImport,
+    img: StaticImageData,
     text: string,
     link: string,
 }

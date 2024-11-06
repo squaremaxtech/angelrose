@@ -1,0 +1,68 @@
+.gridCont {
+    display: grid;
+    grid-template-areas:
+        "a a a b b b b b"
+        "c c c c d d d d"
+        "e e e e e e e e";
+
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    gap: var(--gapR);
+}
+
+.gridItem {
+    grid-column: 1/-1;
+    min-height: 400px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    transition: scale var(--transitionTimeR);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.gridItem:hover {
+    scale: 1.015;
+}
+
+.gridItem>.backdrop {
+    opacity: 0;
+    transition: opacity var(--transitionTimeR);
+}
+
+.gridItem:hover>.backdrop {
+    opacity: 1;
+}
+
+/* two column layout */
+.textCont {
+    flex: 1 1 300px;
+    display: grid;
+    align-content: flex-start;
+    gap: var(--gapM);
+    padding: var(--paddingML);
+    background-color: rgb(var(--color1));
+    min-height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+    .gridCont {
+        display: grid;
+        grid-template-areas:
+            "a a a a a a a a"
+            "b b b b b b b b"
+            "c c c c c c c c"
+            "d d d d d d d d"
+            "e e e e e e e e";
+    }
+
+    .gridItem {
+        min-height: 200px;
+    }
+
+    .textCont {
+        padding: var(--paddingR);
+        min-height: auto;
+    }
+}

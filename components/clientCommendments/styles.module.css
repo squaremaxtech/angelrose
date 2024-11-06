@@ -1,0 +1,9 @@
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(var(--color1));
+    justify-content: center;
+    width: min(1000px, 100%);
+    margin: 0 auto;
+    padding: var(--paddingM);
+}

@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  /* border: 1px solid red !important; */
+}
+
+
 :root {
   /* display rgb values */
   --display-color1: #fefaf0;
@@ -14,6 +21,7 @@
   --display-shade1: #000000;
   --display-shade2: #ffffff;
   --display-shade3: #282626;
+  /* always put rgba and .8 opacity when using shade 4 */
   --display-shade4: #e2e4e6cc;
   --display-shade5: #403f2b;
 
@@ -54,6 +62,7 @@
   /* border radius */
   --borderRadiusR: 1rem;
   --borderRadiusM: 2rem;
+  --borderRadiusL: 50%;
 
   /* fonts */
   --fontSizeS: 16px;
@@ -65,6 +74,7 @@
   --fontSizeEL: min(100px, 10vw);
 
   /* sizes */
+  --sizeES: .5rem;
   --sizeS: .7rem;
   --sizeR: 1rem;
   --sizeM: 1.5rem;
@@ -81,11 +91,6 @@
   --perspectiveR: 600px
 }
 
-*,
-*::before,
-*::after {
-  /* border: 1px solid red !important; */
-}
 
 *::selection {
   background-color: rgb(var(--color2));
@@ -194,6 +199,6 @@ svg {
   }
 
   .minimizePadding {
-    padding: var(--paddingM) var(--paddingR) !important;
+    padding: var(--blockPadding, var(--paddingM)) var(--inlinePadding, var(--paddingR)) !important;
   }
 }
