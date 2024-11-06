@@ -1,0 +1,67 @@
+.galleryCont {
+    display: grid;
+    align-content: flex-start;
+}
+
+.galleryCont svg {
+    fill: rgb(var(--shade1));
+    width: var(--sizeM);
+    height: var(--sizeM);
+    cursor: pointer;
+}
+
+.itemCont {
+    position: relative;
+    cursor: pointer;
+    /* overflow: hidden; */
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.itemCont:hover>.fullscreenButton {
+    display: block;
+    animation: slideUp 400ms both;
+}
+
+.itemCont:hover>.backdrop {
+    opacity: .5;
+}
+
+.backdrop {
+    opacity: 0;
+    transition: opacity 600ms;
+}
+
+.fullscreenButton {
+    display: none;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(400%);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+.seekButton {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    padding: .5rem;
+    aspect-ratio: 1/1;
+}
+
+.prevButton {
+    left: 1rem;
+}
+
+.nextButton {
+    right: 1rem;
+}

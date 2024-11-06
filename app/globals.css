@@ -36,16 +36,20 @@
   --gapS: .5rem;
   --gapR: 1rem;
   --gapM: 2rem;
+  --gapL: 4rem;
 
   --paddingS: .5rem;
   --paddingR: 1rem;
   --paddingM: 2rem;
   --paddingML: 4rem;
+  --paddingMML: 5rem;
   --paddingL: 7rem;
 
   --marginS: .5rem;
   --marginR: 1rem;
   --marginM: 2rem;
+  --marginML: 4rem;
+
 
   /* border radius */
   --borderRadiusR: 1rem;
@@ -56,6 +60,7 @@
   --fontSizeR: 20px;
   --fontSizeRM: min(30px, 6vw);
   --fontSizeM: min(35px, 8vw);
+  --fontSizeML: min(56px, 9vw);
   --fontSizeL: min(65px, 10vw);
   --fontSizeEL: min(100px, 10vw);
 
@@ -69,6 +74,11 @@
   /* transition times */
   --transitionTimeR: 400ms;
   --transitionTimeM: 1000ms;
+
+  --animationTimeL: 1500ms;
+
+  /* perspective */
+  --perspectiveR: 600px
 }
 
 *,
@@ -135,10 +145,6 @@ section {
   padding: var(--paddingML) var(--paddingML);
 }
 
-footer {
-  padding: var(--paddingML) var(--paddingML);
-}
-
 input,
 textarea {
   padding: var(--paddingS);
@@ -185,5 +191,9 @@ svg {
 
   .collapsePadding {
     padding: 0 !important;
+  }
+
+  .minimizePadding {
+    padding: var(--paddingM) var(--paddingR) !important;
   }
 }

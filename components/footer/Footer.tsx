@@ -7,15 +7,21 @@ import ConsultForm from '@/components/consultForm/ConsultForm'
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <div style={{ width: "min(500px, 100%)", display: "grid", alignContent: "flex-start", gap: "var(--gapM)" }}>
-                <h1 style={{ lineHeight: "4rem", color: "rgb(var(--shade2))" }}>Request a FREE Consultation</h1>
+            <div className={styles.footerFlexCont}>
+                <div style={{ width: "min(500px, 100%)", display: "grid", alignContent: "flex-start", gap: "var(--gapM)" }}>
+                    <h1 style={{ lineHeight: "4rem", color: "rgb(var(--shade2))" }}>Request a FREE Consultation</h1>
 
-                <p>We are dedicated to addressing your elder care needs, and our team is ready to assist you with every detail.</p>
+                    <p>We are dedicated to addressing your elder care needs, and our team is ready to assist you with every detail.</p>
 
-                <ConsultForm />
+                    <ConsultForm />
+                </div>
+
+                <ShowOnDesktop menuItems={menuItems} calledFromFooter={true} />
             </div>
 
-            <ShowOnDesktop menuItems={menuItems} calledFromFooter={true} />
+            <div className={styles.rightsCont}>
+                <p>© 2024 by SquareMax Technologies</p>
+            </div>
         </footer>
     )
 }

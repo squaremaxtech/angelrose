@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from "./styles.module.css"
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
-import gg from "@/public/ladyAndDoctor.webp"
+import img1 from "@/public/ladysitting.webp"
+import img2 from "@/public/vegetables.webp"
+import img3 from "@/public/manpressurereading.webp"
+import img4 from "@/public/oldgroup.webp"
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -14,25 +17,25 @@ type offer = {
 
 const offers: offer[] = [
     {
-        image: gg,
+        image: img1,
         title: "Residential Care",
         text: "At home care including comfortable rooms, daily hygiene and personal care, authentic Jamaican home-style meals, medical checkups and recreational activities",
         link: "/services"
     },
     {
-        image: gg,
+        image: img2,
         title: "Home  Cooked Meals",
         text: "Authentic Jamaican satisfaction!  Nourishing meals freshly prepared from 'salt of the earth' Jamaican grown good 'food'.",
         link: "/services"
     },
     {
-        image: gg,
+        image: img3,
         title: "Health Care",
         text: "Our resident's health is our priority and we are staffed to ensure nothing is overlooked.  With physio-therapy, regular checkups and activities to sustain their spirits, we work hard to keep our residents healthy and happy.",
         link: "/services"
     },
     {
-        image: gg,
+        image: img4,
         title: "Recreation",
         text: "The adult years can be enjoyable and we take care our our seniors, from birthday parties, to day trips and simple, safe recreational activities, their joy is our satisfaction.",
         link: "/services"

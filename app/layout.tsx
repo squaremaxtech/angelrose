@@ -19,7 +19,16 @@ const playfairItalicFont = localFont({
 const frauncesFont = localFont({
   src: "./fonts/fraunces.ttf",
   variable: "--fraunces",
-  // weight: "100 400 900",
+});
+
+const bitterFont = localFont({
+  src: "./fonts/Bitter.ttf",
+  variable: "--bitter",
+});
+
+const bitterItalicFont = localFont({
+  src: "./fonts/Bitter-Italic.ttf",
+  variable: "--bitterItalic",
 });
 
 export const metadata: Metadata = {
@@ -35,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairFont.variable} ${playfairItalicFont.variable} ${frauncesFont.variable} antialiased`}
+        className={`${playfairFont.variable} ${playfairItalicFont.variable} ${frauncesFont.variable} ${bitterItalicFont.variable} ${bitterFont.variable} antialiased`}
       >
         <Toaster position="top-center" reverseOrder={false} />
 

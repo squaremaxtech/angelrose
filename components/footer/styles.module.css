@@ -1,5 +1,21 @@
 .footer {
+    display: grid;
+    align-content: flex-start;
+    background-color: rgb(var(--color5));
+    padding: var(--paddingML) var(--paddingML);
+    gap: var(--gapL);
+    padding-bottom: 0;
+}
+
+.footerFlexCont {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(var(--color5));
+}
+
+.rightsCont {
+    display: grid;
+    justify-items: center;
+    border-top: 1px solid rgb(var(--shade5));
+    padding-block: var(--paddingM);
+    /* padding-block: var(--paddingM); */
 }

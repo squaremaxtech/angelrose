@@ -1,0 +1,66 @@
+.textCont {
+    flex: 1 1 400px;
+    display: grid;
+    align-content: flex-start;
+    gap: var(--gapM);
+    background-color: rgb(var(--color1));
+    padding: var(--paddingM) var(--paddingMML);
+}
+
+.textCont>ul {
+    display: grid;
+    align-content: flex-start;
+}
+
+.textCont p {
+    font-family: var(--bitterItalic);
+    font-weight: 300;
+}
+
+.textCont span {
+    font-weight: 500;
+}
+
+.specialText {
+    color: white;
+    /* Fallback: assume this color ON TOP of image */
+    background: url("/village.jpg");
+    background-position: center;
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+    font-family: var(--fraunces);
+    font-size: var(--fontSizeRM);
+    animation: swing var(--animationTimeL) alternate infinite ease-in-out;
+    transform-origin: top center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.specialText>span {
+    font-family: var(--bitter);
+    font-size: var(--fontSizeML);
+    display: inline-block;
+}
+
+
+@keyframes swing {
+    0% {
+        transform: rotateX(30deg);
+    }
+
+    100% {
+        transform: rotateX(-30deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .textCont {
+        padding: var(--paddingM) var(--paddingR);
+
+    }
+}
