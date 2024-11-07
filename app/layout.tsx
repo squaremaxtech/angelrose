@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/nav/Nav";
 import Footer from "@/components/footer/Footer";
 import { Toaster } from "react-hot-toast";
+import BackToTopBttn from "@/components/backToTopButton/BackToTopBttn";
 
 const playfairFont = localFont({
   src: "./fonts/Playfair.ttf",
@@ -51,6 +52,7 @@ export default function RootLayout({
         <Nav />
 
         {children}
+        <BackToTopBttn />
 
         <Footer />
       </body>

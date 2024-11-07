@@ -2,43 +2,39 @@
 import Image from 'next/image'
 import React, { useState, useEffect, useRef } from 'react'
 import styles from "./gallery.module.css"
-import { StaticImageData } from 'next/dist/shared/lib/get-img-props'
-import img from "@/public/village.jpg"
-import img2 from "@/public/smilingLady.webp"
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import img1 from "@/public/gallery/ladywithnoodles.webp"
+import img2 from "@/public/gallery/womaninstretcher.webp"
+import img3 from "@/public/gallery/meal.webp"
+import img4 from "@/public/gallery/womaneatingmeal.webp"
+import img5 from "@/public/gallery/twowomeneating.webp"
+import img6 from "@/public/gallery/team.webp"
 
-type galleryItems = { name: string; image: StaticImageData; }
+type galleryItems = { name: string; image: StaticImport; }
 const gallery: galleryItems[] = [
     {
-        name: "Family Portrait",
-        image: img
+        name: "",
+        image: img1
     },
     {
-        name: "Product Photography",
+        name: "",
         image: img2
     },
     {
-        name: "Real Estate",
-        image: img
+        name: "",
+        image: img3
     },
     {
-        name: "Wedding Photography",
-        image: img2
+        name: "",
+        image: img4
     },
     {
-        name: "Portrait",
-        image: img
+        name: "",
+        image: img5
     },
     {
-        name: "Lifestyle Photography",
-        image: img2
-    },
-    {
-        name: "Event Photography",
-        image: img
-    },
-    {
-        name: "Food Photography",
-        image: img2
+        name: "",
+        image: img6
     },
 ]
 export default function Gallery() {
@@ -127,7 +123,7 @@ export default function Gallery() {
                 <p style={{ justifySelf: "center", textTransform: "capitalize", padding: "1rem" }}>{gallery[activeImageIndex].name}</p>
             </div>
 
-            <div style={{ display: "grid", alignContent: "flex-start", gridTemplateColumns: "repeat(auto-fit, minmax(min(250px, 100%), 1fr))", gap: "var(--gapR)" }}>
+            <div style={{ display: "grid", alignContent: "flex-start", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "var(--gapR)" }}>
                 {gallery.map((eachItem, eachItemIndex) => {
                     return (
                         <div className={styles.itemCont} key={eachItemIndex} onClick={() => { activeImageIndexSet(eachItemIndex); viewingFullScreenSet(true) }}>

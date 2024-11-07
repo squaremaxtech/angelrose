@@ -71,11 +71,15 @@
   /* fonts */
   --fontSizeS: 16px;
   --fontSizeR: 20px;
-  --fontSizeRM: min(30px, 6vw);
-  --fontSizeM: min(35px, 8vw);
-  --fontSizeML: min(56px, 9vw);
-  --fontSizeL: min(65px, 10vw);
-  --fontSizeEL: min(100px, 10vw);
+  --fontSizeRM: min(30px, calc(6vw + 1px));
+  --fontSizeM: min(35px, calc(8vw + 1px));
+  --fontSizeML: min(56px, calc(9vw + 1px));
+  --fontSizeL: min(65px, calc(10vw + 1px));
+  --fontSizeEL: min(100px, calc(10vw + 1px));
+
+
+
+
 
   /* sizes */
   --sizeES: .5rem;
