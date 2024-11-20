@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Fetch the latest code from GitHub
-git pull origin master
+git pull origin main
 
 # Install dependencies
 npm install
