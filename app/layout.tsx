@@ -17,6 +17,7 @@ const playfairItalicFont = localFont({
   variable: "--playfairItalic",
   weight: "100 500 900",
 });
+
 const frauncesFont = localFont({
   src: "./fonts/fraunces.ttf",
   variable: "--fraunces",
@@ -32,9 +33,19 @@ const bitterItalicFont = localFont({
   variable: "--bitterItalic",
 });
 
-export const metadata: Metadata = {
+const metadataInfo = {
   title: "Angel Rose",
-  description: "We offer a helpful hand and supportive guidance for senior adults who need exceptional care, as they complete their journey through retirement",
+  description: "We offer a helpful hand and supportive guidance for senior adults who need exceptional care, as they complete their journey through retirement"
+}
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://angelroseadultcare.com'),
+  title: metadataInfo.title,
+  description: metadataInfo.description,
+  openGraph: {
+    title: metadataInfo.title,
+    description: metadataInfo.description,
+  }
 };
 
 export default function RootLayout({
