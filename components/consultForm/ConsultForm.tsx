@@ -114,9 +114,9 @@ export default function ConsultForm() {
             if (!consultFormSchema.safeParse(formObj).success) return toast.error("Form not valid")
 
             await sendNodeEmail({
-                sendTo: "squaremaxtech@gmail.com",
+                sendTo: "angelroseadultcare@gmail.com",
                 replyTo: formObj.email,
-                subject: `Customer Consult from ${formObj.firstName} ${formObj.lastName} - angelrose`,
+                subject: `Customer Consult from ${formObj.firstName} ${formObj.lastName}`,
                 text: `
                 ${Object.entries(formObj).map(eachObjEntry => {
                     const eachObjKey = eachObjEntry[0]
