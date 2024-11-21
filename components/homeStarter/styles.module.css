@@ -21,7 +21,6 @@
 @media only screen and (max-width: 600px) {
     .cont {
         height: 35dvh;
-        align-items: flex-start;
     }
 
     .textCont {

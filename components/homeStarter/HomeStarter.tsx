@@ -6,7 +6,7 @@ import styles from "./styles.module.css"
 export default function HomeStarter() {
     return (
         <div className={styles.cont}>
-            <Image alt={"home image ladies hugging"} src={ladiesHug} fill={true} style={{ objectFit: "cover" }} />
+            <Image alt={"home image ladies hugging"} src={ladiesHug} priority={true} fill={true} style={{ objectFit: "cover" }} />
 
             <div className={styles.textCont}>
                 <p className="extraLargeText" style={{ color: "rgb(var(--color1))" }}>Angel Rose Adult Care</p>

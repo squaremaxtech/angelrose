@@ -49,7 +49,7 @@ export default function WhatWeOffer() {
                 return (
                     <div key={eachOfferIndex} style={{ display: "flex", flexWrap: "wrap" }}>
                         <div style={{ flex: "1 1 150px", position: "relative", minHeight: "250px" }}>
-                            <Image alt={`${eachOffer.title} image`} src={eachOffer.image} fill={true} style={{ objectFit: "cover" }} sizes="(max-width: 300px) 100vw, 50vw" />
+                            <Image alt={`${eachOffer.title} image`} src={eachOffer.image} fill={true} style={{ objectFit: "cover", objectPosition: "top" }} sizes="(max-width: 300px) 100vw, 50vw" />
                         </div>
 
                         <div className={styles.textCont}>
