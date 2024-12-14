@@ -31,13 +31,13 @@ const offers: offer[] = [
     {
         image: img3,
         title: "Health Care",
-        text: "Our resident's health is our priority and we are staffed to ensure nothing is overlooked.  With physio-therapy, regular checkups and activities to sustain their spirits, we work hard to keep our residents healthy and happy.",
+        text: "Our residents' health is our priority and we are staffed to ensure nothing is overlooked.  With physio-therapy, regular checkups and activities to sustain their spirits, we work hard to keep our residents healthy and happy.",
         link: "/services#health"
     },
     {
         image: img4,
         title: "Recreation",
-        text: "The adult years can be enjoyable and we take care our our seniors, from birthday parties, to day trips and simple, safe recreational activities, their joy is our satisfaction.",
+        text: "The adult years can be enjoyable and we assist with that by taking care of our seniors, from birthday parties, to day trips and simple, safe recreational activities. Their joy is our satisfaction.",
         link: "/services#recreation"
     },
 ]

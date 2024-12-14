@@ -11,7 +11,7 @@ export default function HomeStarter() {
             <div className={styles.textCont}>
                 <p className="extraLargeText" style={{ color: "rgb(var(--color1))" }}>Angel Rose Adult Care</p>
 
-                <h2 style={{ color: "rgb(var(--color4))" }}>Caring is not just what we do.  Its who we <span style={{ color: "rgb(var(--color2))" }}>ARE.</span></h2>
+                <h2 style={{ color: "rgb(var(--color4))" }}>Caring is not just what we do.  It&apos;s who we <span style={{ color: "rgb(var(--color2))" }}>ARE.</span></h2>
             </div>
         </div>
     )

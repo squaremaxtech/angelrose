@@ -10,7 +10,7 @@ export default function OurMission() {
             <div className={styles.textCont}>
                 <h1>Our Mission</h1>
 
-                <p className={styles.quotesText}>“We offer a helpful hand and supportive guidance for senior adults who need exceptional care, as they complete their journey through retirement”.</p>
+                <p className={styles.quotesText}>“We offer a helpful hand & supportive guidance for senior adults who need exceptional care, as they complete their journey through retirement”.</p>
 
                 <div className={styles.textSmallCont}>
                     <p>At Angel Rose Adult Care we aim to provide excellent care to all our residents.  We treat each resident like our own family, with the care & respect that is due to their position as elders in our community.  Our seniors deserve nothing less.</p>

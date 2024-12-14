@@ -64,7 +64,7 @@ export default function Page() {
                     <div className='minimizePadding' style={{ flex: "2 1 400px", backgroundColor: "rgb(var(--color1))", padding: "var(--paddingML)", display: "grid", alignContent: "flex-start", gap: "var(--gapM)", perspective: "var(--perspectiveR)" }}>
                         <p className={styles.specialText}>It takes a <span>Village</span> to make a <span>Home</span></p>
 
-                        <p>Our extensive experience and business management skill, is supported by our team of caregivers, administrators, and medical practitioners, all working together to ensure the highest level of care for our clients.</p>
+                        <p>Our extensive experience and business management skills, are supported by our team of caregivers, administrators, and medical practitioners, all working together to ensure the highest level of care for our clients.</p>
 
                         <div>
                             <p>Our highly skilled care team includes a Manager & Administrator as well as: </p>

@@ -14,7 +14,7 @@ export default function Page() {
             <section style={{ backgroundColor: "rgb(var(--color3))", textAlign: "center", justifyItems: "center", gap: "var(--gapM)" }}>
                 <h1>Get in Touch</h1>
 
-                <p>We love our customers. Feel free to contact us at any time. We are available via email, whatsapp, or phone.  You may also complete the form below and we will get back to you.</p>
+                <p>We love our customers. Feel free to contact us at any time. We are available via email, WhatsApp, or phone.  You may also complete the form below and we will get back to you.</p>
 
                 <ul style={{ display: "flex", gap: "var(--gapS)" }}>
                     {[

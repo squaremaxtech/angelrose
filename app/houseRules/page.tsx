@@ -83,7 +83,8 @@ export default function Page() {
                             <li>Visitors should be considerate during their visits and avoid loud conversations that may disturb other residents.</li>
                         </ul>
 
-                        <p>We love birthday celebrations for our residents and they are included in our service.  Note however, that planning birthday celebrations at the Home, involves collaboration with our administrative team for the comfort of all our residents. <span>We recommend notifying the Home in advance of any upcoming birthday celebrations</span> so that the Administrative Office can assist with the planning. These events will be limited to four guests, and family members are welcome. The goal is to ensure that the celebration does not overwhelm your loved one or other residents.</p>
+                        <p>We love birthday celebrations for our residents and they are included in our service.  Note however, that planning birthday celebrations at the Home, involves collaboration with our administrative team for the comfort of all our residents. <span>We recommend notifying the Home in advance of any upcoming birthday celebrations</span> so that the Administrative Office can assist with the planning. For birthday celebrations, family members are welcome, however,
+                            these events will be limited to four guests. The goal is to ensure that the celebration does not overwhelm your loved one or other residents.</p>
 
                         <p>Please note that <span>if a family member takes a resident out of the home for any length of time, the monthly payment for their lodging is still required,</span> regardless of how long they are away.</p>
 

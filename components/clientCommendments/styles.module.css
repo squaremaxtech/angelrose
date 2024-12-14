@@ -7,3 +7,27 @@
     margin: 0 auto;
     padding: var(--paddingM);
 }
+
+.commendList {
+    display: grid;
+    align-content: flex-start;
+    gap: .5rem
+}
+
+.commendList>li::before {
+    content: "";
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    translate: 0 -50%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(var(--shade1));
+}
+
+.commendList>li {
+    position: relative;
+    margin-left: 1rem;
+}

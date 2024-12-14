@@ -20,7 +20,7 @@ export default function Home() {
       <section className="collapsePadding" style={{ justifyItems: "center", paddingBlock: "var(--paddingR) !important" }}>
         <h1>What We Offer</h1>
 
-        <p style={{ margin: "var(--marginS) var(--marginR)" }}>Exceptional care is our mandate and our passion.  Our facilities, our staff and our services are all designed for the safety, comfort and wellbeing of our residents.  Our services aim to promote a contented state of senior living, relaxed yet vibrant, easing through the retirement age and having some fun along the way.</p>
+        <p style={{ margin: "var(--marginS) var(--marginR)" }}>Exceptional care is our mandate and our passion.  Our facilities, our staff and our services are all designed for the safety, comfort and wellbeing of our residents.  Our services aim to promote a contented state of senior living; relaxed yet vibrant, easing through the retirement age and having some fun along the way.</p>
 
         <WhatWeOffer />
       </section>

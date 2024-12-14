@@ -78,7 +78,7 @@ export default function Page() {
               <h2 id='residential'>Residential Care</h2>
 
               <p>Care is what we do. Every facility is built with love and every service is delivered with care. Our surroundings are clean, comfortable and safe for our residents.  Our Havendale facility is located in a quiet, up-town residential neighborhood, you can be comfortable that your loved one is safe and secure.</p>
-              <p>Our compassionate staff including nurses. nurses-aides and other caregivers, ensure our residents and their surroundings are well cared for.</p>
+              <p>Our compassionate staff including nurses, nurse&apos;s aides and other caregivers, ensure our residents and their surroundings are well cared for.</p>
               <p>Our rooms accommodate two residents each and there are shared communal spaces including relaxing lawns and gardens for their comfort.</p>
             </div>
           )}
@@ -92,8 +92,8 @@ export default function Page() {
               <h2 id='health'>Health & Wellness</h2>
 
               <p>Our care teams include nurses & doctors on call.  Our seniors receive regularly scheduled health check-ups and our team will go the extra mile if emergency medical care is needed.</p>
-              <p>{"Our nutritionist(s) ensure our meal plans are nutritious and appropriate to our residents' needs.  Our physiotherapist(s) ensure that their mobility needs are adequately managed,"}</p>
-              <p>We also provide world class aids such as hospital beds, walkers and wheelchairs.  We see to our resident&apos;s comfort, health and overall wellbeing.</p>
+              <p>{"Our nutritionist(s) ensure our meal plans are nutritious and appropriate for our residents' needs.  Our physiotherapist(s) ensure that their mobility needs are adequately met,"}</p>
+              <p>We also provide world class equipment such as hospital beds, walkers and wheelchairs.  We see to our residents&apos; comfort, health and overall wellbeing.</p>
             </div>
           )}
         />
@@ -105,7 +105,7 @@ export default function Page() {
             <div className={styles.textCont}>
               <h2 id='meals'>Home Cooked Meals</h2>
 
-              <p>Scrumptious, authentic Jamaican cuisine, including real Jamaican tea and coffee.   Breakfast, lunch and dinner is served daily and residents may also take their snacks for when the munchies hit in between.</p>
+              <p>We provide scrumptious, authentic Jamaican cuisine, including real Jamaican tea and coffee.   Breakfast, lunch and dinner are served daily and residents may also take their snacks for when the munchies hit in between.</p>
             </div>
           )}
         />
@@ -119,7 +119,7 @@ export default function Page() {
 
               <p>We delight in encouraging our seniors to remain active, vibrant and interested in the world around them.  Our activities include day trips to nearby elder-safe havens such as Hope Gardens.</p>
               <p>We play with our seniors, encouraging joy and laughter.   Games nights are a celebration and there is nothing so joyful as celebrating another year of life. Birthday celebrations are a big deal at Angel Rose Adult Care.</p>
-              <p>Our seniors may be in their twilight years, but they still have some pep in their step.  We encourage their engagement, participation and enjoyment.</p>
+              <p>Our seniors may be in their twilight years, but they still have some &apos;pep in their steps&apos;.  We encourage their engagement, participation and enjoyment.</p>
             </div>
           )}
         />
@@ -131,7 +131,7 @@ export default function Page() {
             <div className={styles.textCont}>
               <h2 id='assitiive'>Mobility Aids & Assistive Technology</h2>
 
-              <p>We aim to keep our seniors agile and mobile while granting them a sense of independence. Our offerings include comfortable hospital beds for ease of care, as well as mobility aids and assistive technology like walkers, wheelchairs, and canes, at no additional cost.</p>
+              <p>We aim to keep our seniors agile and mobile while granting them a sense of independence. Our offerings include comfortable hospital beds for ease of care, as well as, mobility aids and assistive technology like walkers, wheelchairs, and canes, at no additional cost.</p>
               <p>Happy, healthy  elders are a testament to the care and support they receive, allowing them to thrive in our home.</p>
 
               <Image alt="assitive technology image" width={240} height={240} src={assistiveTech} style={{ objectFit: "contain", justifySelf: "flex-end" }} />
