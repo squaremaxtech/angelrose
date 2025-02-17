@@ -9,6 +9,10 @@ import img3 from "@/public/gallery/meal.webp"
 import img4 from "@/public/gallery/womaneatingmeal.webp"
 import img5 from "@/public/gallery/twowomeneating.webp"
 import img6 from "@/public/gallery/team.webp"
+import img7 from "@/public/gallery/furniture.jpg"
+import img8 from "@/public/gallery/home 2.jpg"
+import img9 from "@/public/gallery/equipment 1.jpg"
+import img10 from "@/public/gallery/equipment 2.jpg"
 
 type galleryItems = { name: string; image: StaticImport; }
 const gallery: galleryItems[] = [
@@ -35,6 +39,22 @@ const gallery: galleryItems[] = [
     {
         name: "",
         image: img6
+    },
+    {
+        name: "",
+        image: img7
+    },
+    {
+        name: "",
+        image: img8
+    },
+    {
+        name: "",
+        image: img9
+    },
+    {
+        name: "",
+        image: img10
     },
 ]
 export default function Gallery() {

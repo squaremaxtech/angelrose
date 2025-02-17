@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./styles.module.css"
 import { StaticImageData } from 'next/dist/shared/lib/get-img-props'
-import img1 from "@/public/ladysitting.webp"
+import img1 from "@/public/home.jpg"
 import img2 from "@/public/vegetables.webp"
 import img3 from "@/public/manpressurereading.webp"
 import img4 from "@/public/oldgroup.webp"

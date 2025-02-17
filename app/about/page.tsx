@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import ladySmiling from "@/public/ladysmiling.webp"
+import img1 from "@/public/outside.jpg"
+import img2 from "@/public/Rosemarie.jpg"
 import styles from "./page.module.css"
 import Gallery from '@/components/gallery/Gallery'
 
@@ -32,7 +33,7 @@ export default function Page() {
                     </div>
 
                     <div style={{ flex: "1 1 400px", position: "relative", minHeight: "400px" }}>
-                        <Image alt='lady smiling img' src={ladySmiling} priority={true} fill={true} style={{ objectFit: "cover" }} />
+                        <Image alt='lady smiling img' src={img1} priority={true} fill={true} style={{ objectFit: "cover" }} />
                     </div>
                 </div>
             </section>
@@ -42,11 +43,15 @@ export default function Page() {
                     <h1>Our Story</h1>
 
                     <div style={{ display: "grid", alignContent: "flex-start", gap: "var(--gapM)" }}>
-                        <p>Angel Rose Adult Care is the brainchild of Co-Founder and Director, Rosemarie Thomas.  With over 15 years of adult care experience, Rosemarie has dedicated herself to providing compassionate care to seniors in Jamaica and the USA. Her deep love for seniors is met with equal affection, creating an environment where seniors truly thrive.</p>
+                        <div style={{ display: "flex", gap: "var(--gapM)", flexWrap: "wrap", flexDirection: "row-reverse" }}>
+                            <Image alt='Rosemarie Thomas' src={img2} height={400} width={400} style={{ objectFit: "contain" }} />
 
-                        <p>Recognizing the increasing need for safe and nurturing homes for the elderly in Jamaica, Rosemarie turned her vision for elder care into a reality, launching the first Angel Rose Adult Care home in February 2023.</p>
-
-                        <p>Angel Rose Adult Care may be a relatively new establishment, but its founders have made inroads in the field of nursing and geriatric care. With a strong background in Nurse Aide and Home Health Aide roles, combined with a corporate business background, they are well-equipped to provide exceptional care.  Additionally, their expertise in Private Home Care further enhances the quality of services offered.</p>
+                            <div style={{ flex: "1 1 300px", display: "grid", alignContent: "flex-start", gap: "var(--gapM)" }}>
+                                <p>Angel Rose Adult Care is the brainchild of Founder and Director, Rosemarie Thomas.  With over 15 years of adult care experience, Rosemarie has dedicated herself to providing compassionate care to seniors in Jamaica and the USA. Her deep love for seniors is met with equal affection, creating an environment where seniors truly thrive.</p>
+                                <p>Recognizing the increasing need for safe and nurturing homes for the elderly in Jamaica, Rosemarie turned her vision for elder care into a reality, launching the first Angel Rose Adult Care home in February 2023.</p>
+                                <p>Angel Rose Adult Care may be a relatively new establishment, but its founders have made inroads in the field of nursing and geriatric care. With a strong background in Nurse Aide and Home Health Aide roles, combined with a corporate business background, they are well-equipped to provide exceptional care.  Additionally, their expertise in Private Home Care further enhances the quality of services offered.</p>
+                            </div>
+                        </div>
 
                         <p>As the Angel Rose vision continues to evolve, facilities are being expanded in 2024 and plans for new facilities are already underway.  It is Rosemarie&apos;s dream to ensure that more seniors can experience the exceptional care they deserve.</p>
 
