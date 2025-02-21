@@ -14,7 +14,6 @@ import img8 from "@/public/gallery/home 2.jpg"
 import img9 from "@/public/gallery/equipment 1.jpg"
 import img10 from "@/public/gallery/equipment 2.jpg"
 import img11 from "@/public/gallery/home 2.jpg"
-import img12 from "@/public/gallery/equipment 2.jpg"
 
 type galleryItems = { name: string; image: StaticImport; }
 const gallery: galleryItems[] = [
