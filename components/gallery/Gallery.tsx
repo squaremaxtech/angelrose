@@ -13,6 +13,8 @@ import img7 from "@/public/gallery/furniture.jpg"
 import img8 from "@/public/gallery/home 2.jpg"
 import img9 from "@/public/gallery/equipment 1.jpg"
 import img10 from "@/public/gallery/equipment 2.jpg"
+import img11 from "@/public/gallery/home 2.jpg"
+import img12 from "@/public/gallery/equipment 2.jpg"
 
 type galleryItems = { name: string; image: StaticImport; }
 const gallery: galleryItems[] = [
@@ -22,7 +24,7 @@ const gallery: galleryItems[] = [
     },
     {
         name: "",
-        image: img2
+        image: img4
     },
     {
         name: "",
@@ -30,19 +32,7 @@ const gallery: galleryItems[] = [
     },
     {
         name: "",
-        image: img4
-    },
-    {
-        name: "",
-        image: img5
-    },
-    {
-        name: "",
-        image: img6
-    },
-    {
-        name: "",
-        image: img7
+        image: img2
     },
     {
         name: "",
@@ -50,7 +40,23 @@ const gallery: galleryItems[] = [
     },
     {
         name: "",
+        image: img5
+    },
+    {
+        name: "",
+        image: img7
+    },
+    {
+        name: "",
         image: img9
+    },
+    {
+        name: "",
+        image: img6
+    },
+    {
+        name: "",
+        image: img11
     },
     {
         name: "",
