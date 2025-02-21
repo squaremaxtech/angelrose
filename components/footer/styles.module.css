@@ -1,6 +1,7 @@
 .footer {
     display: grid;
     align-content: flex-start;
+    justify-items: center;
     background-color: rgb(var(--color5));
     padding: var(--paddingML) var(--paddingML);
     gap: var(--gapL);
@@ -9,12 +10,11 @@
 
 .footerFlexCont {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .rightsCont {
     display: grid;
-    justify-items: center;
     border-top: 1px solid rgb(var(--shade5));
     padding-block: var(--paddingM);
     /* padding-block: var(--paddingM); */
