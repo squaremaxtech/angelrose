@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import img1 from "@/public/about us.jpg"
-import img2 from "@/public/Rosemarie.jpg"
+import img2 from "@/public/Rosemarie.png"
 import styles from "./page.module.css"
 import Gallery from '@/components/gallery/Gallery'
 
